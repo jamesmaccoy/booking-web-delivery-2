@@ -20,7 +20,9 @@ import { isAdminField } from '@/access/isAdminField'
 import { addCustomerToForm } from '@/hooks/addCustomerIdToForm'
 
 const generateTitle: GenerateTitle<Post | Page> = ({ doc }) => {
-  return doc?.title ? `${doc.title} | Payload Website Template` : 'Payload Website Template'
+  return doc?.title
+    ? `${doc.title} | Sustainable self built houses`
+    : 'Sustainable self built houses'
 }
 
 const generateURL: GenerateURL<Post | Page> = ({ doc }) => {
